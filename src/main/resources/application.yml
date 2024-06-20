@@ -1,0 +1,19 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  application:
+    name: EMS
+  datasource:
+    url: jdbc:mysql://localhost:3306/emsDb
+    username: root
+    password: 5991
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: mysql
+    hibernate.ddl-auto: update
+    show-sql: true
+    open-in-view: false
+
+server.port: 5000
+base-url: http://localhost:5000
